@@ -29,16 +29,24 @@ namespace Compiler
             return match.Success;
         }
 
+        static bool IsValidPostalCode (string PostalCode)
+        {
+            string PostalCodePattern = @"^\d{10}$";
+            Regex regex = new Regex(PostalCodePattern);
+            Match match = regex.Match(PostalCode);
+            return match.Success;
+        }
+
         static void Main ()
         {
-            string URL = Console.ReadLine();
-            if (IsValidURL(URL))
+            string PostalCode = Console.ReadLine();
+            if (IsValidPostalCode(PostalCode))
             {
-                Console.WriteLine("URL is valid.");
+                Console.WriteLine("PostalCode is valid.");
             }
             else
             {
-                Console.WriteLine("URL is not valid");
+                Console.WriteLine("PostalCode is not valid");
             }
         }
     }
