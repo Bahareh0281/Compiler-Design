@@ -37,16 +37,24 @@ namespace Compiler
             return match.Success;
         }
 
+        static bool IsValidPhoneNumber (string PhoneNumber)
+        {
+            string PhoneNumberPattern = @"^09\d{9}$";
+            Regex regex = new Regex(PhoneNumberPattern);
+            Match match = regex.Match(PhoneNumber);
+            return match.Success;
+        }
+
         static void Main ()
         {
-            string PostalCode = Console.ReadLine();
-            if (IsValidPostalCode(PostalCode))
+            string PhoneNumber = Console.ReadLine();
+            if (IsValidPhoneNumber(PhoneNumber))
             {
-                Console.WriteLine("PostalCode is valid.");
+                Console.WriteLine("Phone Number is valid.");
             }
             else
             {
-                Console.WriteLine("PostalCode is not valid");
+                Console.WriteLine("Phone Number is not valid");
             }
         }
     }
