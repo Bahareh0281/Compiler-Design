@@ -21,16 +21,24 @@ namespace Compiler
             return match.Success;
         }
 
+        static bool IsValidURL (string URL)
+        {
+            string URLPattern = @"^(https?|ftp)://[^\s/$.?#].[^\s]*$";
+            Regex regex = new Regex(URLPattern);
+            Match match = regex.Match(URL);
+            return match.Success;
+        }
+
         static void Main ()
         {
-            string MathExpression = Console.ReadLine();
-            if (IsValidMathExpression(MathExpression))
+            string URL = Console.ReadLine();
+            if (IsValidURL(URL))
             {
-                Console.WriteLine("Math expression is valid.");
+                Console.WriteLine("URL is valid.");
             }
             else
             {
-                Console.WriteLine("Math expression is not valid");
+                Console.WriteLine("URL is not valid");
             }
         }
     }
