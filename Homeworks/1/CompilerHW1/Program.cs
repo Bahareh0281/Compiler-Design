@@ -12,16 +12,25 @@ namespace Compiler
             Match match = regex.Match(EmailAddress);
             return match.Success;
         }
+
+        static bool IsValidMathExpression (string MathExpression)
+        {
+            string MathExpressionPattern = @"^\d+(\s*[-+*/]\s*\d+)*$";
+            Regex regex = new Regex(MathExpressionPattern);
+            Match match = regex.Match(MathExpression);
+            return match.Success;
+        }
+
         static void Main ()
         {
-            string email = Console.ReadLine();
-            if (IsEmailValid(email))
+            string MathExpression = Console.ReadLine();
+            if (IsValidMathExpression(MathExpression))
             {
-                Console.WriteLine("Email is valid.");
+                Console.WriteLine("Math expression is valid.");
             }
             else
             {
-                Console.WriteLine("Email is not valid");
+                Console.WriteLine("Math expression is not valid");
             }
         }
     }
