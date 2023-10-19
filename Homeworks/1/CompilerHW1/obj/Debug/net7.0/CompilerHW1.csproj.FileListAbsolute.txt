@@ -1,0 +1,15 @@
+E:\Bahareh\University\Semesters\7\Files\اصول طراحي كامپايلر\Git\Compiler-Design\Homeworks\1\CompilerHW1\bin\Debug\net7.0\CompilerHW1.exe
+E:\Bahareh\University\Semesters\7\Files\اصول طراحي كامپايلر\Git\Compiler-Design\Homeworks\1\CompilerHW1\bin\Debug\net7.0\CompilerHW1.deps.json
+E:\Bahareh\University\Semesters\7\Files\اصول طراحي كامپايلر\Git\Compiler-Design\Homeworks\1\CompilerHW1\bin\Debug\net7.0\CompilerHW1.runtimeconfig.json
+E:\Bahareh\University\Semesters\7\Files\اصول طراحي كامپايلر\Git\Compiler-Design\Homeworks\1\CompilerHW1\bin\Debug\net7.0\CompilerHW1.dll
+E:\Bahareh\University\Semesters\7\Files\اصول طراحي كامپايلر\Git\Compiler-Design\Homeworks\1\CompilerHW1\bin\Debug\net7.0\CompilerHW1.pdb
+E:\Bahareh\University\Semesters\7\Files\اصول طراحي كامپايلر\Git\Compiler-Design\Homeworks\1\CompilerHW1\obj\Debug\net7.0\CompilerHW1.csproj.AssemblyReference.cache
+E:\Bahareh\University\Semesters\7\Files\اصول طراحي كامپايلر\Git\Compiler-Design\Homeworks\1\CompilerHW1\obj\Debug\net7.0\CompilerHW1.GeneratedMSBuildEditorConfig.editorconfig
+E:\Bahareh\University\Semesters\7\Files\اصول طراحي كامپايلر\Git\Compiler-Design\Homeworks\1\CompilerHW1\obj\Debug\net7.0\CompilerHW1.AssemblyInfoInputs.cache
+E:\Bahareh\University\Semesters\7\Files\اصول طراحي كامپايلر\Git\Compiler-Design\Homeworks\1\CompilerHW1\obj\Debug\net7.0\CompilerHW1.AssemblyInfo.cs
+E:\Bahareh\University\Semesters\7\Files\اصول طراحي كامپايلر\Git\Compiler-Design\Homeworks\1\CompilerHW1\obj\Debug\net7.0\CompilerHW1.csproj.CoreCompileInputs.cache
+E:\Bahareh\University\Semesters\7\Files\اصول طراحي كامپايلر\Git\Compiler-Design\Homeworks\1\CompilerHW1\obj\Debug\net7.0\CompilerHW1.dll
+E:\Bahareh\University\Semesters\7\Files\اصول طراحي كامپايلر\Git\Compiler-Design\Homeworks\1\CompilerHW1\obj\Debug\net7.0\refint\CompilerHW1.dll
+E:\Bahareh\University\Semesters\7\Files\اصول طراحي كامپايلر\Git\Compiler-Design\Homeworks\1\CompilerHW1\obj\Debug\net7.0\CompilerHW1.pdb
+E:\Bahareh\University\Semesters\7\Files\اصول طراحي كامپايلر\Git\Compiler-Design\Homeworks\1\CompilerHW1\obj\Debug\net7.0\CompilerHW1.genruntimeconfig.cache
+E:\Bahareh\University\Semesters\7\Files\اصول طراحي كامپايلر\Git\Compiler-Design\Homeworks\1\CompilerHW1\obj\Debug\net7.0\ref\CompilerHW1.dll
