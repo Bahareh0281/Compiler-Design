@@ -1,0 +1,4 @@
+begin
+      d := a*b
+      e := c + d*e
+end
