@@ -1,3 +1,6 @@
+import networkx as nx
+import matplotlib.pyplot as plt
+from networkx.drawing.nx_agraph import graphviz_layout
 from antlr4 import *
 
 from Gen.AssignmentStatementLexer import AssignmentStatementLexer
@@ -37,8 +40,8 @@ def main(args):
     draw(g=ast_generator.g)
     print("Finished")
 
-"""
-function to show If statement:
+
+# function to show If statement:
 
 
 def draw(g: nx.DiGraph = None):
@@ -100,12 +103,12 @@ def draw(g: nx.DiGraph = None):
 """
 """
 
-function to show Assignment Statement:
+# function to show Assignment Statement:
 
 
 def draw(g: nx.DiGraph = None):
 
-    Initial positions with graphviz 'dot'
+    # Initial positions with graphviz 'dot'
     pos = graphviz_layout(g, prog='dot')
 
     # Custom positions for nodes
@@ -184,7 +187,7 @@ def draw(g: nx.DiGraph = None):
     plt.axis('off')
 
     plt.show()
-"""
+
 
 
 if __name__ == '__main__':
