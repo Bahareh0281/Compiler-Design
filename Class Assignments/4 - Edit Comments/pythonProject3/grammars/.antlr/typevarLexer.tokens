@@ -1,0 +1,9 @@
+INT=1
+FLOAT=2
+SEMICOL=3
+SPACE=4
+STR=5
+'int'=1
+'float'=2
+';'=3
+' '=4

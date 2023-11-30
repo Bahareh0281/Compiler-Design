@@ -1,0 +1,3 @@
+pip install antlr4-tools
+pip install antlr4-python3-runtime
+antlr4 -Dlanguage=Python3 Grammar.g4

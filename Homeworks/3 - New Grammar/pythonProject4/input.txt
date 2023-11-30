@@ -1,0 +1,9 @@
+#This is the first comment
+int x;
+x=10;
+boolean b;
+b=true;
+#This is the second comment
+int y=76;
+boolean c=false;
+#This is the third comment

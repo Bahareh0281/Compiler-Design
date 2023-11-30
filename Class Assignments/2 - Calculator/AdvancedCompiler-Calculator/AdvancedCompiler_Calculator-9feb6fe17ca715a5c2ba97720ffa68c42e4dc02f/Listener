@@ -1,0 +1,84 @@
+
+from antlr4 import *
+from io import StringIO
+
+class CalculatorListener(ParseTreeListener):
+
+    def __init__(self):
+        self.result = None
+
+    def exitExpr(self, ctx):
+        if ctx.getChildCount() == 1:
+            self.result = self.exitTerm(ctx.getChild(0))
+        else:
+            op = ctx.getChild(1).text
+            if op == '+':
+                self.result = self.exitExpr(ctx.getChild(0)) +
+                              self.exitExpr(ctx.getChild(2))
+            elif op == '-':
+                self.result = self.exitExpr(ctx.getChild(0)) –
+                              self.exitExpr(ctx.getChild(2))
+            elif op == '*':
+                self.result = self.exitExpr(ctx.getChild(0)) *
+                              self.exitExpr(ctx.getChild(2))
+            elif op == '/':
+                self.result = self.exitExpr(ctx.getChild(0)) /
+                              self.exitExpr(ctx.getChild(2))
+
+    def exitTerm(self, ctx):
+        if ctx.getChildCount() == 1:
+            return self.exitFactor(ctx.getChild(0))
+        else:
+            op = ctx.getChild(1).text
+            if op == '*':
+                return self.exitTerm(ctx.getChild(0)) *
+                       self.exitTerm(ctx.getChild(2))
+            elif op == '/':
+                return self.exitTerm(ctx.getChild(0)) /
+                       self.exitTerm(ctx.getChild(2))
+
+    def exitFactor(self, ctx):
+        if ctx.getChildCount() == 1:
+            return self.exitNumber(ctx.getChild(0))
+        else:
+            return self.exitExpr(ctx.getChild(1))
+
+    def exitNumber(self, ctx):
+        return int(ctx.getChild(0).value)
+
+    def getResult(self):
+        return self.result
+
+# Define the main function
+def main():
+    # Example input: "3 + 4"
+    input_expression = input("Enter an arithmetic expression: ")
+
+    # Create a lexer that feeds off the input expression
+    lexer = ArithmeticLexer(InputStream(input_expression))
+
+    # Create a stream of tokens using the lexer
+    token_stream = CommonTokenStream(lexer)
+
+    # Create a parser that feeds off the token stream
+    parser = ArithmeticParser(token_stream)
+
+    # Obtain the parse tree by invoking the parser's entry point
+    parse_tree = parser.expression()
+
+    # Create a custom listener object
+    listener = CalculatorListener ()
+
+    # Walk the parse tree with the custom listener
+    walker = ParseTreeWalker()
+    walker.walk(listener, parse_tree)
+
+    # Get the result from the Listener
+    result = Listener.result
+
+    # Output the result
+    print("Result:", result)
+
+# Call the main function
+if __name__ == '__main__':
+    main()
