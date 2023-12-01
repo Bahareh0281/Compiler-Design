@@ -2,90 +2,90 @@ grammar AssignmentStatement;
 
 start returns [value_attr = str(), type_attr = str()]:
       prog NEWLINE* EOF ;
+
 prog returns [value_attr = str(), type_attr = str()]:
       'program' ID NEWLINE* declaration? NEWLINE+ compoundst;
+
 declaration returns [value_attr = str(), type_attr = str()]:
       'var' NEWLINE* (variable_declaration NEWLINE*)+ ;
+
 variable_declaration returns [value_attr = str(), type_attr = str()]:
       ID ':' type ;
+
 type returns [value_attr = str(), type_attr = str()]:
       'float' | 'int' | 'string';
-compoundst  returns [value_attr = str(), type_attr = str()]:
+
+compoundst returns [value_attr = str(), type_attr = str()]:
       'begin' NEWLINE* (statement NEWLINE+)+ 'end' ;
-statement  returns [value_attr = str(), type_attr = str()]:
-      ifst | assign | compoundst ;
-ifst  returns [value_attr = str(), type_attr = str()]:
+
+statement returns [value_attr = str(), type_attr = str()]:
+      ifst | assign | compoundst | forst | whilest | switchcase ;
+
+ifst returns [value_attr = str(), type_attr = str()]:
       'if' cond 'then' NEWLINE* statement NEWLINE*
-       ('else' NEWLINE* statement)? ;
-cond  returns [value_attr = str(), type_attr = str()]:
-      expr '>' expr ;
+      ('else' NEWLINE* statement)? ;
+
+forst returns [value_attr = str(), type_attr = str()]:
+      'for' '(' assign ';' cond ';' assign ')' NEWLINE* statement ;
+
+whilest returns [value_attr = str(), type_attr = str()]:
+      'while' cond NEWLINE* statement ;
+
+switchcase returns [value_attr = str(), type_attr = str()]:
+      'switch' ID 'case' (INT | FLOAT | STRING) ':' NEWLINE* statement ;
+
+cond returns [value_attr = str(), type_attr = str()]:
+      expr RELOP expr ;
+
 assign returns [value_attr = str(), type_attr = str()]:
       ID ':=' expr ;
+
 expr returns [value_attr = str(), type_attr = str()]:
-     expr '+' term        #expr_term_plus
-    | expr '-' term      #expr_term_minus
-    | expr RELOP term    #expr_term_relop
-    | term               #term4
-    ;
+      expr '+' term        #expr_term_plus
+      | expr '-' term      #expr_term_minus
+      | expr RELOP term    #expr_term_relop
+      | term               #term4
+      ;
 
 term returns [value_attr = str(), type_attr = str()]:
-    term '*' factor      #term_fact_mutiply
-    | term '/' factor    #term_fact_divide
-    | factor             #factor3
-    ;
+      term '*' factor      #term_fact_mutiply
+      | term '/' factor    #term_fact_divide
+      | factor             #factor3
+      ;
 
 factor returns [value_attr = str(), type_attr = str()]:
-    '(' expr ')'      #fact_expr
-    | ID              #fact_id
-    | number          #fact_number
-    | array           #fact_array
-    ;
+      '(' expr ')'      #fact_expr
+      | ID              #fact_id
+      | number          #fact_number
+      | array           #fact_array
+      ;
 
 number returns [value_attr = str(), type_attr = str()]:
-    FLOAT             #number_float
-    | INT             #number_int
-    ;
+      FLOAT             #number_float
+      | INT             #number_int
+      ;
 
 array returns [value_attr = str(), type_attr = str()]:
-    INT_ARRAY        #array_int
-    | FLOAT_ARRAY    #array_float
-    | STRING_ARRAY   #array_string
-    ;
-
+      INT_ARRAY        #array_int
+      | FLOAT_ARRAY    #array_float
+      | STRING_ARRAY   #array_string
+      ;
 
 /* Lexical Rules */
 INT     : DIGIT+ ;
+FLOAT   : DIGIT+ '.' DIGIT* | '.' DIGIT+ ;
+String  : '"' (ESC|.)*? '"' ;
+ID      : LETTER(LETTER|DIGIT)* ;
 
-FLOAT:
-    DIGIT+ '.' DIGIT*
-    | '.' DIGIT+ ;
+ARRAY_TYPE    : ID '[' INT ']';
+INT_ARRAY     : '[' INT (',' INT)* ']';
+FLOAT_ARRAY   : '[' FLOAT (',' FLOAT)* ']';
+STRING_ARRAY  : '[' String (',' String)* ']';
 
-String:
-        '"' (ESC|.)*? '"' ;
-ID:
-    LETTER(LETTER|DIGIT)* ;
+fragment DIGIT   : [0-9] ;
+fragment LETTER  : [a-zA-Z] ;
+fragment ESC     : '\\"' | '\\\\' ;
 
-ARRAY_TYPE:
-    ID '[' INT ']';
-
-INT_ARRAY:
-    '[' INT (',' INT)* ']';
-
-FLOAT_ARRAY:
-    '[' FLOAT (',' FLOAT)* ']';
-
-STRING_ARRAY:
-    '[' String (',' String)* ']';
-
-
-fragment
-        DIGIT: [0-9] ;
-fragment
-        LETTER: [a-zA-Z] ;
-fragment
-        ESC: '\\"' | '\\\\' ;
-
-
-WS: [ \t\r]+ -> skip ;
-NEWLINE: '\n' | '\r\n';
-RELOP: '<=' | '<' ;
+WS      : [ \t\r]+ -> skip ;
+NEWLINE : '\n' | '\r\n';
+RELOP   : '<=' | '<' ;

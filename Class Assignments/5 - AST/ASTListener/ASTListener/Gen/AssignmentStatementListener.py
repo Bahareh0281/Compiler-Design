@@ -1,6 +1,6 @@
-# Generated from E:/MyWorks/Class Projects/Compiler/Compiler_1402/Resources/13. AST-builder\AssignmentStatement.g4 by ANTLR 4.11.1
+# Generated from D:/Bahareh/7/Files/Compiler/Git/Compiler-Design/Class Assignments/5 - AST/ASTListener/ASTListener/AssignmentStatement.g4 by ANTLR 4.13.1
 from antlr4 import *
-if __name__ is not None and "." in __name__:
+if "." in __name__:
     from .AssignmentStatementParser import AssignmentStatementParser
 else:
     from AssignmentStatementParser import AssignmentStatementParser
@@ -77,6 +77,33 @@ class AssignmentStatementListener(ParseTreeListener):
 
     # Exit a parse tree produced by AssignmentStatementParser#ifst.
     def exitIfst(self, ctx:AssignmentStatementParser.IfstContext):
+        pass
+
+
+    # Enter a parse tree produced by AssignmentStatementParser#forst.
+    def enterForst(self, ctx:AssignmentStatementParser.ForstContext):
+        pass
+
+    # Exit a parse tree produced by AssignmentStatementParser#forst.
+    def exitForst(self, ctx:AssignmentStatementParser.ForstContext):
+        pass
+
+
+    # Enter a parse tree produced by AssignmentStatementParser#whilest.
+    def enterWhilest(self, ctx:AssignmentStatementParser.WhilestContext):
+        pass
+
+    # Exit a parse tree produced by AssignmentStatementParser#whilest.
+    def exitWhilest(self, ctx:AssignmentStatementParser.WhilestContext):
+        pass
+
+
+    # Enter a parse tree produced by AssignmentStatementParser#switchcase.
+    def enterSwitchcase(self, ctx:AssignmentStatementParser.SwitchcaseContext):
+        pass
+
+    # Exit a parse tree produced by AssignmentStatementParser#switchcase.
+    def exitSwitchcase(self, ctx:AssignmentStatementParser.SwitchcaseContext):
         pass
 
 

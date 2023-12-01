@@ -1,6 +1,6 @@
-# Generated from E:/MyWorks/Class Projects/Compiler/Compiler_1402/Resources/13. AST-builder\AssignmentStatement.g4 by ANTLR 4.11.1
+# Generated from D:/Bahareh/7/Files/Compiler/Git/Compiler-Design/Class Assignments/5 - AST/ASTListener/ASTListener/AssignmentStatement.g4 by ANTLR 4.13.1
 from antlr4 import *
-if __name__ is not None and "." in __name__:
+if "." in __name__:
     from .AssignmentStatementParser import AssignmentStatementParser
 else:
     from AssignmentStatementParser import AssignmentStatementParser
@@ -46,6 +46,21 @@ class AssignmentStatementVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by AssignmentStatementParser#ifst.
     def visitIfst(self, ctx:AssignmentStatementParser.IfstContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by AssignmentStatementParser#forst.
+    def visitForst(self, ctx:AssignmentStatementParser.ForstContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by AssignmentStatementParser#whilest.
+    def visitWhilest(self, ctx:AssignmentStatementParser.WhilestContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by AssignmentStatementParser#switchcase.
+    def visitSwitchcase(self, ctx:AssignmentStatementParser.SwitchcaseContext):
         return self.visitChildren(ctx)
 
 
