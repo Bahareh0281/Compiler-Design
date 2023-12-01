@@ -23,7 +23,7 @@ def count_max_depth(code):
 if __name__ == '__main__':
 
     # Read the input file
-    input_file = "input3.txt"
+    input_file = "input.txt"
     with open(input_file, "r") as file:
         content = file.readlines()
 

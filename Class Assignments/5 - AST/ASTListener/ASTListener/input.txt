@@ -1,0 +1,16 @@
+program Test
+var
+  a : int
+  b : int
+  c : int
+  d : int
+  e : float
+  f : float
+  u : string
+begin
+    if a>b then
+       c:=u+g
+    else
+       a := e*f
+    b := c*d
+end
