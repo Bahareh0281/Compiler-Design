@@ -16,4 +16,7 @@ begin
 
     for a:=1 to 4 do
         a:=5
+
+    while i>5
+        a:=6
 end

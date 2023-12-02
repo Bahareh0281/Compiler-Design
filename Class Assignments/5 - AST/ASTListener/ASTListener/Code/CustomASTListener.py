@@ -117,7 +117,7 @@ class ASTListener(AssignmentStatementListener):
 
     # Exit a parse tree produced by AssignmentStatementParser#whilest.
     def exitWhilest(self, ctx: AssignmentStatementParser.WhilestContext):
-        self.make_AST_subtree(tree_node=ctx, operator = "while")
+        self.make_AST_subtree(tree_node=ctx, opertor = "while")
 
     # Exit a parse tree produced by AssignmentStatementParser#switchcase.
     def exitSwitchcase(self, ctx: AssignmentStatementParser.SwitchcaseContext):
