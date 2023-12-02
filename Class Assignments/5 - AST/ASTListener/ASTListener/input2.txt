@@ -13,4 +13,7 @@ begin
     else
        a := e*f
     b := c*d
+
+    for a:=1 to 4 do
+        a:=5
 end

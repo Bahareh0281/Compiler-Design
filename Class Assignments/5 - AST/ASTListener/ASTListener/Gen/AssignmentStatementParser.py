@@ -10,7 +10,7 @@ else:
 
 def serializedATN():
     return [
-        4,1,35,237,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,7,
+        4,1,36,234,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,7,
         6,2,7,7,7,2,8,7,8,2,9,7,9,2,10,7,10,2,11,7,11,2,12,7,12,2,13,7,13,
         2,14,7,14,2,15,7,15,2,16,7,16,2,17,7,17,1,0,1,0,5,0,39,8,0,10,0,
         12,0,42,9,0,1,0,1,0,1,1,1,1,1,1,5,1,49,8,1,10,1,12,1,52,9,1,1,1,
@@ -21,78 +21,77 @@ def serializedATN():
         1,5,1,5,1,6,1,6,1,6,1,6,1,6,1,6,3,6,113,8,6,1,7,1,7,1,7,1,7,5,7,
         119,8,7,10,7,12,7,122,9,7,1,7,1,7,5,7,126,8,7,10,7,12,7,129,9,7,
         1,7,1,7,5,7,133,8,7,10,7,12,7,136,9,7,1,7,3,7,139,8,7,1,8,1,8,1,
-        8,1,8,1,8,1,8,1,8,1,8,1,8,5,8,150,8,8,10,8,12,8,153,9,8,1,8,1,8,
-        1,9,1,9,1,9,5,9,160,8,9,10,9,12,9,163,9,9,1,9,1,9,1,10,1,10,1,10,
-        1,10,1,10,1,10,5,10,173,8,10,10,10,12,10,176,9,10,1,10,1,10,1,11,
-        1,11,1,11,1,11,1,12,1,12,1,12,1,12,1,13,1,13,1,13,1,13,1,13,1,13,
-        1,13,1,13,1,13,1,13,1,13,1,13,5,13,200,8,13,10,13,12,13,203,9,13,
-        1,14,1,14,1,14,1,14,1,14,1,14,1,14,1,14,1,14,5,14,214,8,14,10,14,
-        12,14,217,9,14,1,15,1,15,1,15,1,15,1,15,1,15,1,15,3,15,226,8,15,
-        1,16,1,16,3,16,230,8,16,1,17,1,17,1,17,3,17,235,8,17,1,17,0,2,26,
-        28,18,0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,0,2,1,0,4,
-        6,2,0,24,25,35,35,251,0,36,1,0,0,0,2,45,1,0,0,0,4,63,1,0,0,0,6,81,
-        1,0,0,0,8,85,1,0,0,0,10,87,1,0,0,0,12,112,1,0,0,0,14,114,1,0,0,0,
-        16,140,1,0,0,0,18,156,1,0,0,0,20,166,1,0,0,0,22,179,1,0,0,0,24,183,
-        1,0,0,0,26,187,1,0,0,0,28,204,1,0,0,0,30,225,1,0,0,0,32,229,1,0,
-        0,0,34,234,1,0,0,0,36,40,3,2,1,0,37,39,5,33,0,0,38,37,1,0,0,0,39,
-        42,1,0,0,0,40,38,1,0,0,0,40,41,1,0,0,0,41,43,1,0,0,0,42,40,1,0,0,
-        0,43,44,5,0,0,1,44,1,1,0,0,0,45,46,5,1,0,0,46,50,5,27,0,0,47,49,
-        5,33,0,0,48,47,1,0,0,0,49,52,1,0,0,0,50,48,1,0,0,0,50,51,1,0,0,0,
-        51,54,1,0,0,0,52,50,1,0,0,0,53,55,3,4,2,0,54,53,1,0,0,0,54,55,1,
-        0,0,0,55,57,1,0,0,0,56,58,5,33,0,0,57,56,1,0,0,0,58,59,1,0,0,0,59,
-        57,1,0,0,0,59,60,1,0,0,0,60,61,1,0,0,0,61,62,3,10,5,0,62,3,1,0,0,
-        0,63,67,5,2,0,0,64,66,5,33,0,0,65,64,1,0,0,0,66,69,1,0,0,0,67,65,
-        1,0,0,0,67,68,1,0,0,0,68,77,1,0,0,0,69,67,1,0,0,0,70,74,3,6,3,0,
-        71,73,5,33,0,0,72,71,1,0,0,0,73,76,1,0,0,0,74,72,1,0,0,0,74,75,1,
-        0,0,0,75,78,1,0,0,0,76,74,1,0,0,0,77,70,1,0,0,0,78,79,1,0,0,0,79,
-        77,1,0,0,0,79,80,1,0,0,0,80,5,1,0,0,0,81,82,5,27,0,0,82,83,5,3,0,
-        0,83,84,3,8,4,0,84,7,1,0,0,0,85,86,7,0,0,0,86,9,1,0,0,0,87,91,5,
-        7,0,0,88,90,5,33,0,0,89,88,1,0,0,0,90,93,1,0,0,0,91,89,1,0,0,0,91,
-        92,1,0,0,0,92,100,1,0,0,0,93,91,1,0,0,0,94,96,3,12,6,0,95,97,5,33,
-        0,0,96,95,1,0,0,0,97,98,1,0,0,0,98,96,1,0,0,0,98,99,1,0,0,0,99,101,
-        1,0,0,0,100,94,1,0,0,0,101,102,1,0,0,0,102,100,1,0,0,0,102,103,1,
-        0,0,0,103,104,1,0,0,0,104,105,5,8,0,0,105,11,1,0,0,0,106,113,3,14,
-        7,0,107,113,3,24,12,0,108,113,3,10,5,0,109,113,3,16,8,0,110,113,
-        3,18,9,0,111,113,3,20,10,0,112,106,1,0,0,0,112,107,1,0,0,0,112,108,
+        8,1,8,1,8,1,8,5,8,147,8,8,10,8,12,8,150,9,8,1,8,1,8,1,9,1,9,1,9,
+        5,9,157,8,9,10,9,12,9,160,9,9,1,9,1,9,1,10,1,10,1,10,1,10,1,10,1,
+        10,5,10,170,8,10,10,10,12,10,173,9,10,1,10,1,10,1,11,1,11,1,11,1,
+        11,1,12,1,12,1,12,1,12,1,13,1,13,1,13,1,13,1,13,1,13,1,13,1,13,1,
+        13,1,13,1,13,1,13,5,13,197,8,13,10,13,12,13,200,9,13,1,14,1,14,1,
+        14,1,14,1,14,1,14,1,14,1,14,1,14,5,14,211,8,14,10,14,12,14,214,9,
+        14,1,15,1,15,1,15,1,15,1,15,1,15,1,15,3,15,223,8,15,1,16,1,16,3,
+        16,227,8,16,1,17,1,17,1,17,3,17,232,8,17,1,17,0,2,26,28,18,0,2,4,
+        6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,0,2,1,0,4,6,2,0,25,26,
+        36,36,248,0,36,1,0,0,0,2,45,1,0,0,0,4,63,1,0,0,0,6,81,1,0,0,0,8,
+        85,1,0,0,0,10,87,1,0,0,0,12,112,1,0,0,0,14,114,1,0,0,0,16,140,1,
+        0,0,0,18,153,1,0,0,0,20,163,1,0,0,0,22,176,1,0,0,0,24,180,1,0,0,
+        0,26,184,1,0,0,0,28,201,1,0,0,0,30,222,1,0,0,0,32,226,1,0,0,0,34,
+        231,1,0,0,0,36,40,3,2,1,0,37,39,5,34,0,0,38,37,1,0,0,0,39,42,1,0,
+        0,0,40,38,1,0,0,0,40,41,1,0,0,0,41,43,1,0,0,0,42,40,1,0,0,0,43,44,
+        5,0,0,1,44,1,1,0,0,0,45,46,5,1,0,0,46,50,5,28,0,0,47,49,5,34,0,0,
+        48,47,1,0,0,0,49,52,1,0,0,0,50,48,1,0,0,0,50,51,1,0,0,0,51,54,1,
+        0,0,0,52,50,1,0,0,0,53,55,3,4,2,0,54,53,1,0,0,0,54,55,1,0,0,0,55,
+        57,1,0,0,0,56,58,5,34,0,0,57,56,1,0,0,0,58,59,1,0,0,0,59,57,1,0,
+        0,0,59,60,1,0,0,0,60,61,1,0,0,0,61,62,3,10,5,0,62,3,1,0,0,0,63,67,
+        5,2,0,0,64,66,5,34,0,0,65,64,1,0,0,0,66,69,1,0,0,0,67,65,1,0,0,0,
+        67,68,1,0,0,0,68,77,1,0,0,0,69,67,1,0,0,0,70,74,3,6,3,0,71,73,5,
+        34,0,0,72,71,1,0,0,0,73,76,1,0,0,0,74,72,1,0,0,0,74,75,1,0,0,0,75,
+        78,1,0,0,0,76,74,1,0,0,0,77,70,1,0,0,0,78,79,1,0,0,0,79,77,1,0,0,
+        0,79,80,1,0,0,0,80,5,1,0,0,0,81,82,5,28,0,0,82,83,5,3,0,0,83,84,
+        3,8,4,0,84,7,1,0,0,0,85,86,7,0,0,0,86,9,1,0,0,0,87,91,5,7,0,0,88,
+        90,5,34,0,0,89,88,1,0,0,0,90,93,1,0,0,0,91,89,1,0,0,0,91,92,1,0,
+        0,0,92,100,1,0,0,0,93,91,1,0,0,0,94,96,3,12,6,0,95,97,5,34,0,0,96,
+        95,1,0,0,0,97,98,1,0,0,0,98,96,1,0,0,0,98,99,1,0,0,0,99,101,1,0,
+        0,0,100,94,1,0,0,0,101,102,1,0,0,0,102,100,1,0,0,0,102,103,1,0,0,
+        0,103,104,1,0,0,0,104,105,5,8,0,0,105,11,1,0,0,0,106,113,3,14,7,
+        0,107,113,3,24,12,0,108,113,3,10,5,0,109,113,3,16,8,0,110,113,3,
+        18,9,0,111,113,3,20,10,0,112,106,1,0,0,0,112,107,1,0,0,0,112,108,
         1,0,0,0,112,109,1,0,0,0,112,110,1,0,0,0,112,111,1,0,0,0,113,13,1,
         0,0,0,114,115,5,9,0,0,115,116,3,22,11,0,116,120,5,10,0,0,117,119,
-        5,33,0,0,118,117,1,0,0,0,119,122,1,0,0,0,120,118,1,0,0,0,120,121,
+        5,34,0,0,118,117,1,0,0,0,119,122,1,0,0,0,120,118,1,0,0,0,120,121,
         1,0,0,0,121,123,1,0,0,0,122,120,1,0,0,0,123,127,3,12,6,0,124,126,
-        5,33,0,0,125,124,1,0,0,0,126,129,1,0,0,0,127,125,1,0,0,0,127,128,
+        5,34,0,0,125,124,1,0,0,0,126,129,1,0,0,0,127,125,1,0,0,0,127,128,
         1,0,0,0,128,138,1,0,0,0,129,127,1,0,0,0,130,134,5,11,0,0,131,133,
-        5,33,0,0,132,131,1,0,0,0,133,136,1,0,0,0,134,132,1,0,0,0,134,135,
+        5,34,0,0,132,131,1,0,0,0,133,136,1,0,0,0,134,132,1,0,0,0,134,135,
         1,0,0,0,135,137,1,0,0,0,136,134,1,0,0,0,137,139,3,12,6,0,138,130,
         1,0,0,0,138,139,1,0,0,0,139,15,1,0,0,0,140,141,5,12,0,0,141,142,
-        5,13,0,0,142,143,3,24,12,0,143,144,5,14,0,0,144,145,3,22,11,0,145,
-        146,5,14,0,0,146,147,3,24,12,0,147,151,5,15,0,0,148,150,5,33,0,0,
-        149,148,1,0,0,0,150,153,1,0,0,0,151,149,1,0,0,0,151,152,1,0,0,0,
-        152,154,1,0,0,0,153,151,1,0,0,0,154,155,3,12,6,0,155,17,1,0,0,0,
-        156,157,5,16,0,0,157,161,3,22,11,0,158,160,5,33,0,0,159,158,1,0,
-        0,0,160,163,1,0,0,0,161,159,1,0,0,0,161,162,1,0,0,0,162,164,1,0,
-        0,0,163,161,1,0,0,0,164,165,3,12,6,0,165,19,1,0,0,0,166,167,5,17,
-        0,0,167,168,5,27,0,0,168,169,5,18,0,0,169,170,7,1,0,0,170,174,5,
-        3,0,0,171,173,5,33,0,0,172,171,1,0,0,0,173,176,1,0,0,0,174,172,1,
-        0,0,0,174,175,1,0,0,0,175,177,1,0,0,0,176,174,1,0,0,0,177,178,3,
-        12,6,0,178,21,1,0,0,0,179,180,3,26,13,0,180,181,5,34,0,0,181,182,
-        3,26,13,0,182,23,1,0,0,0,183,184,5,27,0,0,184,185,5,19,0,0,185,186,
-        3,26,13,0,186,25,1,0,0,0,187,188,6,13,-1,0,188,189,3,28,14,0,189,
-        201,1,0,0,0,190,191,10,4,0,0,191,192,5,20,0,0,192,200,3,28,14,0,
-        193,194,10,3,0,0,194,195,5,21,0,0,195,200,3,28,14,0,196,197,10,2,
-        0,0,197,198,5,34,0,0,198,200,3,28,14,0,199,190,1,0,0,0,199,193,1,
-        0,0,0,199,196,1,0,0,0,200,203,1,0,0,0,201,199,1,0,0,0,201,202,1,
-        0,0,0,202,27,1,0,0,0,203,201,1,0,0,0,204,205,6,14,-1,0,205,206,3,
-        30,15,0,206,215,1,0,0,0,207,208,10,3,0,0,208,209,5,22,0,0,209,214,
-        3,30,15,0,210,211,10,2,0,0,211,212,5,23,0,0,212,214,3,30,15,0,213,
-        207,1,0,0,0,213,210,1,0,0,0,214,217,1,0,0,0,215,213,1,0,0,0,215,
-        216,1,0,0,0,216,29,1,0,0,0,217,215,1,0,0,0,218,219,5,13,0,0,219,
-        220,3,26,13,0,220,221,5,15,0,0,221,226,1,0,0,0,222,226,5,27,0,0,
-        223,226,3,32,16,0,224,226,3,34,17,0,225,218,1,0,0,0,225,222,1,0,
-        0,0,225,223,1,0,0,0,225,224,1,0,0,0,226,31,1,0,0,0,227,230,5,25,
-        0,0,228,230,5,24,0,0,229,227,1,0,0,0,229,228,1,0,0,0,230,33,1,0,
-        0,0,231,235,5,29,0,0,232,235,5,30,0,0,233,235,5,31,0,0,234,231,1,
-        0,0,0,234,232,1,0,0,0,234,233,1,0,0,0,235,35,1,0,0,0,25,40,50,54,
-        59,67,74,79,91,98,102,112,120,127,134,138,151,161,174,199,201,213,
-        215,225,229,234
+        3,24,12,0,142,143,5,13,0,0,143,144,3,26,13,0,144,148,5,14,0,0,145,
+        147,5,34,0,0,146,145,1,0,0,0,147,150,1,0,0,0,148,146,1,0,0,0,148,
+        149,1,0,0,0,149,151,1,0,0,0,150,148,1,0,0,0,151,152,3,12,6,0,152,
+        17,1,0,0,0,153,154,5,15,0,0,154,158,3,22,11,0,155,157,5,34,0,0,156,
+        155,1,0,0,0,157,160,1,0,0,0,158,156,1,0,0,0,158,159,1,0,0,0,159,
+        161,1,0,0,0,160,158,1,0,0,0,161,162,3,12,6,0,162,19,1,0,0,0,163,
+        164,5,16,0,0,164,165,5,28,0,0,165,166,5,17,0,0,166,167,7,1,0,0,167,
+        171,5,3,0,0,168,170,5,34,0,0,169,168,1,0,0,0,170,173,1,0,0,0,171,
+        169,1,0,0,0,171,172,1,0,0,0,172,174,1,0,0,0,173,171,1,0,0,0,174,
+        175,3,12,6,0,175,21,1,0,0,0,176,177,3,26,13,0,177,178,5,35,0,0,178,
+        179,3,26,13,0,179,23,1,0,0,0,180,181,5,28,0,0,181,182,5,18,0,0,182,
+        183,3,26,13,0,183,25,1,0,0,0,184,185,6,13,-1,0,185,186,3,28,14,0,
+        186,198,1,0,0,0,187,188,10,4,0,0,188,189,5,19,0,0,189,197,3,28,14,
+        0,190,191,10,3,0,0,191,192,5,20,0,0,192,197,3,28,14,0,193,194,10,
+        2,0,0,194,195,5,35,0,0,195,197,3,28,14,0,196,187,1,0,0,0,196,190,
+        1,0,0,0,196,193,1,0,0,0,197,200,1,0,0,0,198,196,1,0,0,0,198,199,
+        1,0,0,0,199,27,1,0,0,0,200,198,1,0,0,0,201,202,6,14,-1,0,202,203,
+        3,30,15,0,203,212,1,0,0,0,204,205,10,3,0,0,205,206,5,21,0,0,206,
+        211,3,30,15,0,207,208,10,2,0,0,208,209,5,22,0,0,209,211,3,30,15,
+        0,210,204,1,0,0,0,210,207,1,0,0,0,211,214,1,0,0,0,212,210,1,0,0,
+        0,212,213,1,0,0,0,213,29,1,0,0,0,214,212,1,0,0,0,215,216,5,23,0,
+        0,216,217,3,26,13,0,217,218,5,24,0,0,218,223,1,0,0,0,219,223,5,28,
+        0,0,220,223,3,32,16,0,221,223,3,34,17,0,222,215,1,0,0,0,222,219,
+        1,0,0,0,222,220,1,0,0,0,222,221,1,0,0,0,223,31,1,0,0,0,224,227,5,
+        26,0,0,225,227,5,25,0,0,226,224,1,0,0,0,226,225,1,0,0,0,227,33,1,
+        0,0,0,228,232,5,30,0,0,229,232,5,31,0,0,230,232,5,32,0,0,231,228,
+        1,0,0,0,231,229,1,0,0,0,231,230,1,0,0,0,232,35,1,0,0,0,25,40,50,
+        54,59,67,74,79,91,98,102,112,120,127,134,138,148,158,171,196,198,
+        210,212,222,226,231
     ]
 
 class AssignmentStatementParser ( Parser ):
@@ -107,9 +106,9 @@ class AssignmentStatementParser ( Parser ):
 
     literalNames = [ "<INVALID>", "'program'", "'var'", "':'", "'float'", 
                      "'int'", "'string'", "'begin'", "'end'", "'if'", "'then'", 
-                     "'else'", "'for'", "'('", "';'", "')'", "'while'", 
-                     "'switch'", "'case'", "':='", "'+'", "'-'", "'*'", 
-                     "'/'" ]
+                     "'else'", "'for'", "'to'", "'do'", "'while'", "'switch'", 
+                     "'case'", "':='", "'+'", "'-'", "'*'", "'/'", "'('", 
+                     "')'" ]
 
     symbolicNames = [ "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
                       "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
@@ -117,9 +116,9 @@ class AssignmentStatementParser ( Parser ):
                       "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
                       "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
                       "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
-                      "INT", "FLOAT", "String", "ID", "ARRAY_TYPE", "INT_ARRAY", 
-                      "FLOAT_ARRAY", "STRING_ARRAY", "WS", "NEWLINE", "RELOP", 
-                      "STRING" ]
+                      "<INVALID>", "INT", "FLOAT", "String", "ID", "ARRAY_TYPE", 
+                      "INT_ARRAY", "FLOAT_ARRAY", "STRING_ARRAY", "WS", 
+                      "NEWLINE", "RELOP", "STRING" ]
 
     RULE_start = 0
     RULE_prog = 1
@@ -169,18 +168,19 @@ class AssignmentStatementParser ( Parser ):
     T__20=21
     T__21=22
     T__22=23
-    INT=24
-    FLOAT=25
-    String=26
-    ID=27
-    ARRAY_TYPE=28
-    INT_ARRAY=29
-    FLOAT_ARRAY=30
-    STRING_ARRAY=31
-    WS=32
-    NEWLINE=33
-    RELOP=34
-    STRING=35
+    T__23=24
+    INT=25
+    FLOAT=26
+    String=27
+    ID=28
+    ARRAY_TYPE=29
+    INT_ARRAY=30
+    FLOAT_ARRAY=31
+    STRING_ARRAY=32
+    WS=33
+    NEWLINE=34
+    RELOP=35
+    STRING=36
 
     def __init__(self, input:TokenStream, output:TextIO = sys.stdout):
         super().__init__(input, output)
@@ -245,7 +245,7 @@ class AssignmentStatementParser ( Parser ):
             self.state = 40
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while _la==33:
+            while _la==34:
                 self.state = 37
                 self.match(AssignmentStatementParser.NEWLINE)
                 self.state = 42
@@ -348,7 +348,7 @@ class AssignmentStatementParser ( Parser ):
                 self.state = 59 
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                if not (_la==33):
+                if not (_la==34):
                     break
 
             self.state = 61
@@ -416,7 +416,7 @@ class AssignmentStatementParser ( Parser ):
             self.state = 67
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while _la==33:
+            while _la==34:
                 self.state = 64
                 self.match(AssignmentStatementParser.NEWLINE)
                 self.state = 69
@@ -443,7 +443,7 @@ class AssignmentStatementParser ( Parser ):
                 self.state = 79 
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                if not (_la==27):
+                if not (_la==28):
                     break
 
         except RecognitionException as re:
@@ -619,7 +619,7 @@ class AssignmentStatementParser ( Parser ):
             self.state = 91
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while _la==33:
+            while _la==34:
                 self.state = 88
                 self.match(AssignmentStatementParser.NEWLINE)
                 self.state = 93
@@ -641,13 +641,13 @@ class AssignmentStatementParser ( Parser ):
                     self.state = 98 
                     self._errHandler.sync(self)
                     _la = self._input.LA(1)
-                    if not (_la==33):
+                    if not (_la==34):
                         break
 
                 self.state = 102 
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                if not ((((_la) & ~0x3f) == 0 and ((1 << _la) & 134419072) != 0)):
+                if not ((((_la) & ~0x3f) == 0 and ((1 << _la) & 268538496) != 0)):
                     break
 
             self.state = 104
@@ -727,7 +727,7 @@ class AssignmentStatementParser ( Parser ):
                 self.state = 106
                 self.ifst()
                 pass
-            elif token in [27]:
+            elif token in [28]:
                 self.enterOuterAlt(localctx, 2)
                 self.state = 107
                 self.assign()
@@ -742,12 +742,12 @@ class AssignmentStatementParser ( Parser ):
                 self.state = 109
                 self.forst()
                 pass
-            elif token in [16]:
+            elif token in [15]:
                 self.enterOuterAlt(localctx, 5)
                 self.state = 110
                 self.whilest()
                 pass
-            elif token in [17]:
+            elif token in [16]:
                 self.enterOuterAlt(localctx, 6)
                 self.state = 111
                 self.switchcase()
@@ -826,7 +826,7 @@ class AssignmentStatementParser ( Parser ):
             self.state = 120
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while _la==33:
+            while _la==34:
                 self.state = 117
                 self.match(AssignmentStatementParser.NEWLINE)
                 self.state = 122
@@ -855,7 +855,7 @@ class AssignmentStatementParser ( Parser ):
                 self.state = 134
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                while _la==33:
+                while _la==34:
                     self.state = 131
                     self.match(AssignmentStatementParser.NEWLINE)
                     self.state = 136
@@ -884,15 +884,12 @@ class AssignmentStatementParser ( Parser ):
             self.value_attr = str()
             self.type_attr = str()
 
-        def assign(self, i:int=None):
-            if i is None:
-                return self.getTypedRuleContexts(AssignmentStatementParser.AssignContext)
-            else:
-                return self.getTypedRuleContext(AssignmentStatementParser.AssignContext,i)
+        def assign(self):
+            return self.getTypedRuleContext(AssignmentStatementParser.AssignContext,0)
 
 
-        def cond(self):
-            return self.getTypedRuleContext(AssignmentStatementParser.CondContext,0)
+        def expr(self):
+            return self.getTypedRuleContext(AssignmentStatementParser.ExprContext,0)
 
 
         def statement(self):
@@ -935,30 +932,24 @@ class AssignmentStatementParser ( Parser ):
             self.state = 140
             self.match(AssignmentStatementParser.T__11)
             self.state = 141
-            self.match(AssignmentStatementParser.T__12)
+            self.assign()
             self.state = 142
-            self.assign()
+            self.match(AssignmentStatementParser.T__12)
             self.state = 143
-            self.match(AssignmentStatementParser.T__13)
+            self.expr(0)
             self.state = 144
-            self.cond()
-            self.state = 145
             self.match(AssignmentStatementParser.T__13)
-            self.state = 146
-            self.assign()
-            self.state = 147
-            self.match(AssignmentStatementParser.T__14)
-            self.state = 151
+            self.state = 148
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while _la==33:
-                self.state = 148
+            while _la==34:
+                self.state = 145
                 self.match(AssignmentStatementParser.NEWLINE)
-                self.state = 153
+                self.state = 150
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
-            self.state = 154
+            self.state = 151
             self.statement()
         except RecognitionException as re:
             localctx.exception = re
@@ -1019,21 +1010,21 @@ class AssignmentStatementParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 156
-            self.match(AssignmentStatementParser.T__15)
-            self.state = 157
+            self.state = 153
+            self.match(AssignmentStatementParser.T__14)
+            self.state = 154
             self.cond()
-            self.state = 161
+            self.state = 158
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while _la==33:
-                self.state = 158
+            while _la==34:
+                self.state = 155
                 self.match(AssignmentStatementParser.NEWLINE)
-                self.state = 163
+                self.state = 160
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
-            self.state = 164
+            self.state = 161
             self.statement()
         except RecognitionException as re:
             localctx.exception = re
@@ -1102,32 +1093,32 @@ class AssignmentStatementParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 166
-            self.match(AssignmentStatementParser.T__16)
-            self.state = 167
+            self.state = 163
+            self.match(AssignmentStatementParser.T__15)
+            self.state = 164
             self.match(AssignmentStatementParser.ID)
-            self.state = 168
-            self.match(AssignmentStatementParser.T__17)
-            self.state = 169
+            self.state = 165
+            self.match(AssignmentStatementParser.T__16)
+            self.state = 166
             _la = self._input.LA(1)
-            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & 34410070016) != 0)):
+            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & 68820140032) != 0)):
                 self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)
                 self.consume()
-            self.state = 170
+            self.state = 167
             self.match(AssignmentStatementParser.T__2)
-            self.state = 174
+            self.state = 171
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while _la==33:
-                self.state = 171
+            while _la==34:
+                self.state = 168
                 self.match(AssignmentStatementParser.NEWLINE)
-                self.state = 176
+                self.state = 173
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
-            self.state = 177
+            self.state = 174
             self.statement()
         except RecognitionException as re:
             localctx.exception = re
@@ -1183,11 +1174,11 @@ class AssignmentStatementParser ( Parser ):
         self.enterRule(localctx, 22, self.RULE_cond)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 179
+            self.state = 176
             self.expr(0)
-            self.state = 180
+            self.state = 177
             self.match(AssignmentStatementParser.RELOP)
-            self.state = 181
+            self.state = 178
             self.expr(0)
         except RecognitionException as re:
             localctx.exception = re
@@ -1240,11 +1231,11 @@ class AssignmentStatementParser ( Parser ):
         self.enterRule(localctx, 24, self.RULE_assign)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 183
+            self.state = 180
             self.match(AssignmentStatementParser.ID)
-            self.state = 184
-            self.match(AssignmentStatementParser.T__18)
-            self.state = 185
+            self.state = 181
+            self.match(AssignmentStatementParser.T__17)
+            self.state = 182
             self.expr(0)
         except RecognitionException as re:
             localctx.exception = re
@@ -1400,10 +1391,10 @@ class AssignmentStatementParser ( Parser ):
             self._ctx = localctx
             _prevctx = localctx
 
-            self.state = 188
+            self.state = 185
             self.term(0)
             self._ctx.stop = self._input.LT(-1)
-            self.state = 201
+            self.state = 198
             self._errHandler.sync(self)
             _alt = self._interp.adaptivePredict(self._input,19,self._ctx)
             while _alt!=2 and _alt!=ATN.INVALID_ALT_NUMBER:
@@ -1411,50 +1402,50 @@ class AssignmentStatementParser ( Parser ):
                     if self._parseListeners is not None:
                         self.triggerExitRuleEvent()
                     _prevctx = localctx
-                    self.state = 199
+                    self.state = 196
                     self._errHandler.sync(self)
                     la_ = self._interp.adaptivePredict(self._input,18,self._ctx)
                     if la_ == 1:
                         localctx = AssignmentStatementParser.Expr_term_plusContext(self, AssignmentStatementParser.ExprContext(self, _parentctx, _parentState))
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expr)
-                        self.state = 190
+                        self.state = 187
                         if not self.precpred(self._ctx, 4):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 4)")
-                        self.state = 191
-                        self.match(AssignmentStatementParser.T__19)
-                        self.state = 192
+                        self.state = 188
+                        self.match(AssignmentStatementParser.T__18)
+                        self.state = 189
                         self.term(0)
                         pass
 
                     elif la_ == 2:
                         localctx = AssignmentStatementParser.Expr_term_minusContext(self, AssignmentStatementParser.ExprContext(self, _parentctx, _parentState))
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expr)
-                        self.state = 193
+                        self.state = 190
                         if not self.precpred(self._ctx, 3):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 3)")
-                        self.state = 194
-                        self.match(AssignmentStatementParser.T__20)
-                        self.state = 195
+                        self.state = 191
+                        self.match(AssignmentStatementParser.T__19)
+                        self.state = 192
                         self.term(0)
                         pass
 
                     elif la_ == 3:
                         localctx = AssignmentStatementParser.Expr_term_relopContext(self, AssignmentStatementParser.ExprContext(self, _parentctx, _parentState))
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expr)
-                        self.state = 196
+                        self.state = 193
                         if not self.precpred(self._ctx, 2):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 2)")
-                        self.state = 197
+                        self.state = 194
                         self.match(AssignmentStatementParser.RELOP)
-                        self.state = 198
+                        self.state = 195
                         self.term(0)
                         pass
 
              
-                self.state = 203
+                self.state = 200
                 self._errHandler.sync(self)
                 _alt = self._interp.adaptivePredict(self._input,19,self._ctx)
 
@@ -1582,10 +1573,10 @@ class AssignmentStatementParser ( Parser ):
             self._ctx = localctx
             _prevctx = localctx
 
-            self.state = 205
+            self.state = 202
             self.factor()
             self._ctx.stop = self._input.LT(-1)
-            self.state = 215
+            self.state = 212
             self._errHandler.sync(self)
             _alt = self._interp.adaptivePredict(self._input,21,self._ctx)
             while _alt!=2 and _alt!=ATN.INVALID_ALT_NUMBER:
@@ -1593,37 +1584,37 @@ class AssignmentStatementParser ( Parser ):
                     if self._parseListeners is not None:
                         self.triggerExitRuleEvent()
                     _prevctx = localctx
-                    self.state = 213
+                    self.state = 210
                     self._errHandler.sync(self)
                     la_ = self._interp.adaptivePredict(self._input,20,self._ctx)
                     if la_ == 1:
                         localctx = AssignmentStatementParser.Term_fact_mutiplyContext(self, AssignmentStatementParser.TermContext(self, _parentctx, _parentState))
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_term)
-                        self.state = 207
+                        self.state = 204
                         if not self.precpred(self._ctx, 3):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 3)")
-                        self.state = 208
-                        self.match(AssignmentStatementParser.T__21)
-                        self.state = 209
+                        self.state = 205
+                        self.match(AssignmentStatementParser.T__20)
+                        self.state = 206
                         self.factor()
                         pass
 
                     elif la_ == 2:
                         localctx = AssignmentStatementParser.Term_fact_divideContext(self, AssignmentStatementParser.TermContext(self, _parentctx, _parentState))
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_term)
-                        self.state = 210
+                        self.state = 207
                         if not self.precpred(self._ctx, 2):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 2)")
-                        self.state = 211
-                        self.match(AssignmentStatementParser.T__22)
-                        self.state = 212
+                        self.state = 208
+                        self.match(AssignmentStatementParser.T__21)
+                        self.state = 209
                         self.factor()
                         pass
 
              
-                self.state = 217
+                self.state = 214
                 self._errHandler.sync(self)
                 _alt = self._interp.adaptivePredict(self._input,21,self._ctx)
 
@@ -1762,35 +1753,35 @@ class AssignmentStatementParser ( Parser ):
         localctx = AssignmentStatementParser.FactorContext(self, self._ctx, self.state)
         self.enterRule(localctx, 30, self.RULE_factor)
         try:
-            self.state = 225
+            self.state = 222
             self._errHandler.sync(self)
             token = self._input.LA(1)
-            if token in [13]:
+            if token in [23]:
                 localctx = AssignmentStatementParser.Fact_exprContext(self, localctx)
                 self.enterOuterAlt(localctx, 1)
-                self.state = 218
-                self.match(AssignmentStatementParser.T__12)
-                self.state = 219
+                self.state = 215
+                self.match(AssignmentStatementParser.T__22)
+                self.state = 216
                 self.expr(0)
-                self.state = 220
-                self.match(AssignmentStatementParser.T__14)
+                self.state = 217
+                self.match(AssignmentStatementParser.T__23)
                 pass
-            elif token in [27]:
+            elif token in [28]:
                 localctx = AssignmentStatementParser.Fact_idContext(self, localctx)
                 self.enterOuterAlt(localctx, 2)
-                self.state = 222
+                self.state = 219
                 self.match(AssignmentStatementParser.ID)
                 pass
-            elif token in [24, 25]:
+            elif token in [25, 26]:
                 localctx = AssignmentStatementParser.Fact_numberContext(self, localctx)
                 self.enterOuterAlt(localctx, 3)
-                self.state = 223
+                self.state = 220
                 self.number()
                 pass
-            elif token in [29, 30, 31]:
+            elif token in [30, 31, 32]:
                 localctx = AssignmentStatementParser.Fact_arrayContext(self, localctx)
                 self.enterOuterAlt(localctx, 4)
-                self.state = 224
+                self.state = 221
                 self.array()
                 pass
             else:
@@ -1880,19 +1871,19 @@ class AssignmentStatementParser ( Parser ):
         localctx = AssignmentStatementParser.NumberContext(self, self._ctx, self.state)
         self.enterRule(localctx, 32, self.RULE_number)
         try:
-            self.state = 229
+            self.state = 226
             self._errHandler.sync(self)
             token = self._input.LA(1)
-            if token in [25]:
+            if token in [26]:
                 localctx = AssignmentStatementParser.Number_floatContext(self, localctx)
                 self.enterOuterAlt(localctx, 1)
-                self.state = 227
+                self.state = 224
                 self.match(AssignmentStatementParser.FLOAT)
                 pass
-            elif token in [24]:
+            elif token in [25]:
                 localctx = AssignmentStatementParser.Number_intContext(self, localctx)
                 self.enterOuterAlt(localctx, 2)
-                self.state = 228
+                self.state = 225
                 self.match(AssignmentStatementParser.INT)
                 pass
             else:
@@ -2006,25 +1997,25 @@ class AssignmentStatementParser ( Parser ):
         localctx = AssignmentStatementParser.ArrayContext(self, self._ctx, self.state)
         self.enterRule(localctx, 34, self.RULE_array)
         try:
-            self.state = 234
+            self.state = 231
             self._errHandler.sync(self)
             token = self._input.LA(1)
-            if token in [29]:
+            if token in [30]:
                 localctx = AssignmentStatementParser.Array_intContext(self, localctx)
                 self.enterOuterAlt(localctx, 1)
-                self.state = 231
+                self.state = 228
                 self.match(AssignmentStatementParser.INT_ARRAY)
                 pass
-            elif token in [30]:
+            elif token in [31]:
                 localctx = AssignmentStatementParser.Array_floatContext(self, localctx)
                 self.enterOuterAlt(localctx, 2)
-                self.state = 232
+                self.state = 229
                 self.match(AssignmentStatementParser.FLOAT_ARRAY)
                 pass
-            elif token in [31]:
+            elif token in [32]:
                 localctx = AssignmentStatementParser.Array_stringContext(self, localctx)
                 self.enterOuterAlt(localctx, 3)
-                self.state = 233
+                self.state = 230
                 self.match(AssignmentStatementParser.STRING_ARRAY)
                 pass
             else:

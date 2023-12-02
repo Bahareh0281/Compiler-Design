@@ -26,7 +26,7 @@ ifst returns [value_attr = str(), type_attr = str()]:
       ('else' NEWLINE* statement)? ;
 
 forst returns [value_attr = str(), type_attr = str()]:
-      'for' '(' assign ';' cond ';' assign ')' NEWLINE* statement ;
+      'for' assign 'to' expr 'do' NEWLINE* statement ;
 
 whilest returns [value_attr = str(), type_attr = str()]:
       'while' cond NEWLINE* statement ;

@@ -111,6 +111,18 @@ class ASTListener(AssignmentStatementListener):
     def exitIfst(self, ctx: AssignmentStatementParser.IfstContext):
         self.make_AST_subtree(tree_node = ctx, opertor = "if")
 
+    # Exit a parse tree produced by AssignmentStatementParser#forst.
+    def exitForst(self, ctx: AssignmentStatementParser.ForstContext):
+        self.make_AST_subtree(tree_node=ctx, opertor = "for")
+
+    # Exit a parse tree produced by AssignmentStatementParser#whilest.
+    def exitWhilest(self, ctx: AssignmentStatementParser.WhilestContext):
+        self.make_AST_subtree(tree_node=ctx, operator = "while")
+
+    # Exit a parse tree produced by AssignmentStatementParser#switchcase.
+    def exitSwitchcase(self, ctx: AssignmentStatementParser.SwitchcaseContext):
+        self.make_AST_subtree(tree_node=ctx, opertor = "switch")
+
     def exitCond(self, ctx:AssignmentStatementParser.CondContext):
         self.make_AST_subtree(tree_node=ctx, opertor=">")
 
