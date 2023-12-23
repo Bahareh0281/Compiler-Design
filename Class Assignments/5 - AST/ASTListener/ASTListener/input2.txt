@@ -19,4 +19,6 @@ begin
 
     while i>5
         a:=6
+
+      'switch' ID 'case' (INT | FLOAT | STRING) ':' NEWLINE* statement ;
 end
