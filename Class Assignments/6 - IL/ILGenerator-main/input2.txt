@@ -1,0 +1,20 @@
+program TestProgram
+var
+    a : int
+    b : int
+    c : int
+    d : int
+    e : int
+    f : int
+begin
+    b := 450 /50 + 23
+    c := 14 * 150
+    f := b>c ? 78: 8+3 == 9+2 ? 69: 48*2
+    if f> 45 then
+    begin
+    f:= f -45
+    output := f
+    end
+    else
+    output := b
+end

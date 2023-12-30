@@ -1,0 +1,14 @@
+program TestProgram
+var
+    a : int
+    b : int
+    c : int
+    d : int
+    e : int
+    f : int
+begin
+    a := 150 * 5
+    b := a /50 + 23
+    output := b
+
+end
