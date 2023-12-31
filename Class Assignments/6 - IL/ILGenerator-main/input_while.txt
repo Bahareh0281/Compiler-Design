@@ -1,0 +1,14 @@
+program TestProgram
+var
+    a : int
+    b : int
+begin
+    a := 0
+    b := 0
+    while a != 12  do
+    begin
+        b := b + 1
+        output := b
+        a := a + 1
+    end
+end

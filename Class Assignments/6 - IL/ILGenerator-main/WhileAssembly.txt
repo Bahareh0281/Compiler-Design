@@ -1,0 +1,30 @@
+section .text
+    global _start
+
+_start:
+    ; Initialization
+    jmp condition_start_label
+
+loop_start_label:
+    ; Loop body
+    ; Your code here
+
+condition_start_label:
+    ; Condition check
+    ; Your code here
+
+    ; Jump to loop_end_label if condition is false
+    cmp eax, 0
+    je loop_end_label
+
+    ; Jump to loop_start_label if condition is true
+    jmp loop_start_label
+
+loop_end_label:
+    ; Loop ends here
+    ; Your code here
+
+    ; Exit program
+    mov eax, 1
+    xor ebx, ebx
+    int 0x80

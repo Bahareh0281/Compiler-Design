@@ -72,6 +72,6 @@ if __name__ == '__main__':
     argparser = argparse.ArgumentParser()
     argparser.add_argument(
         '-n', '--file',
-        help='Input source', default=r'input2.txt')
+        help='Input source', default=r'input_while.txt')
     args = argparser.parse_args()
     main(args)

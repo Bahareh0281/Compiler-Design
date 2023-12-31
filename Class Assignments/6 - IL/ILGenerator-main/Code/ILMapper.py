@@ -131,7 +131,8 @@ class ILMapper:
         operator = 'add' if item == '+' else 'sub' if item == '-'\
             else 'div' if item == '/' else 'mul' if item == '*' else\
             'and' if item == '&&' else 'or' if item == '||' else\
-            'ceq' if item == '==' else 'cgt' if item == '>' else 'clt'
+            'ceq' if item == '==' else 'cgt' if item == '>' else 'clt' if item == '<'\
+            else None
 
         if not self.is_temporary_operand(b):
             if self.is_identifier(b):
@@ -148,6 +149,27 @@ class ILMapper:
                 first_load_statement = f"ldc.i8 {a}\n"
         else:
             first_load_statement = self.il_codes.pop()
+
+        compare = ""
+        if item == '>=':
+            # compare += first_load_statement + 1
+            compare += first_load_statement
+            compare += second_load_statement
+            # compare += f"cgt\nldc.i4.0\nceq\n"
+            compare += f"clt\nldc.i4.0\nceq\n"
+            return compare
+        elif item == '<=':
+            compare += first_load_statement
+            # compare += second_load_statement + 1
+            compare += second_load_statement
+            # compare += f"clt\nldc.i4.0\nceq\n"
+            compare += f"cgt\nldc.i4.0\nceq\n"
+            return compare
+        elif item == '!=':
+            compare += first_load_statement
+            compare += second_load_statement
+            compare += f"ceq\nldc.i4.0\nceq\nstloc.1\n"
+            return compare
 
         self.push_temporary_to_stack()
         return first_load_statement + second_load_statement + f"{operator}\n"
@@ -208,6 +230,11 @@ class ILMapper:
             return self.block()
         if item == 'if':
             return self.if_statement()
+        if item == 'while':
+            return self.while_statement()
+        # if item == 'for':
+        #     return self.for_statement()
+
 
     def block(self):
         temp_block_stack = []
@@ -257,6 +284,29 @@ class ILMapper:
                         + f"{false_label_end}:\n")
         return result
 
+    def while_statement(self):
+        temp_while_stack = []
+        current_code = self.il_codes.pop()
+        if current_code != 'end':
+            return current_code
+        while current_code != 'begin':
+            current_code = self.il_codes.pop()
+            temp_while_stack.append(current_code)
+
+        condition_start_label = self.create_new_label()
+        condition_end_label = self.create_new_label()
+        while_start_label = self.create_new_label()
+        while_end_label = self.create_new_label()
+        temp_while_stack.pop()
+        result = ''
+        result = (f" {while_start_label}:\n"                # Beginning of while
+                  + temp_while_stack.pop()
+                  + f"brfalse {condition_end_label}\n"      # Jump to loop end if condition is false
+                  + temp_while_stack.pop()
+                  + f"br {while_start_label}\n"             # Jump to loop start (an iteration is completed)
+                  + f"{condition_end_label}:\n"
+        )
+        return result
     # ///////GENERATOR__FUNCTIONS__END/////// define your generator functions above
 
 
