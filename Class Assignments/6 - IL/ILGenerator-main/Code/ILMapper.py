@@ -232,8 +232,8 @@ class ILMapper:
             return self.if_statement()
         if item == 'while':
             return self.while_statement()
-        # if item == 'for':
-        #     return self.for_statement()
+        if item == 'for':
+            return self.for_statement()
 
 
     def block(self):
@@ -304,6 +304,30 @@ class ILMapper:
                   + f"brfalse {condition_end_label}\n"      # Jump to loop end if condition is false
                   + temp_while_stack.pop()
                   + f"br {while_start_label}\n"             # Jump to loop start (an iteration is completed)
+                  + f"{condition_end_label}:\n"
+        )
+        return result
+
+    def for_statement(self):
+        temp_for_stack = []
+        current_code = self.il_codes.pop()
+        if current_code != 'end':
+            return current_code
+        while current_code != 'begin':
+            current_code = self.il_codes.pop()
+            temp_for_stack.append(current_code)
+
+        condition_start_label = self.create_new_label()
+        condition_end_label = self.create_new_label()
+        for_start_label = self.create_new_label()
+        for_end_label = self.create_new_label()
+        temp_for_stack.pop()
+        result = ''
+        result = (f" {for_start_label}:\n"                  # Beginning of for
+                  + temp_for_stack.pop()
+                  + f"brfalse {condition_end_label}\n"      # Jump to loop end if condition is false
+                  + temp_for_stack.pop()
+                  + f"br {for_start_label}\n"               # Jump to loop start (an iteration is completed)
                   + f"{condition_end_label}:\n"
         )
         return result
