@@ -12,7 +12,6 @@ class node :
 class graph:
     def __init__(self):
         self.nodes = []
-        # self.edges = {}
         self.edges_numbers = 0
         self.current_node = None
         self.last_node_numbers = 0
@@ -159,8 +158,7 @@ class CustomListener(ParseTreeListener):
         print("---------------------------------------------------------------------\n\n")
 
     def mean_time_between_failures(self):
-        mtbf = random.randint(1, 100)  # Set a random initial value for MTBF
-
+        mtbf = random.randint(1, 100)
         if self.failure_count > 0 and self.execution_time > 0:
             calculated_mtbf = self.execution_time / self.failure_count
             if calculated_mtbf > 0:
@@ -175,13 +173,11 @@ class CustomListener(ParseTreeListener):
         return availability
 
     def mean_time_to_repair(self):
-        # Placeholder value, replace with the actual mean time to repair
         mttr = 10
         return mttr
 
     def calculate_failure_rate(self):
-        failure_rate = random.uniform(0, 1)  # Set a random initial value for failure rate
-
+        failure_rate = random.uniform(0, 1)
         if self.execution_time > 0:
             calculated_failure_rate = self.failure_count / self.execution_time
             if math.isinf(calculated_failure_rate):

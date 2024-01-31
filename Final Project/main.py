@@ -2,7 +2,7 @@ from antlr4 import *
 from antlr4.ParserRuleContext import ParserRuleContext
 from gen.JavaParser import JavaParser
 from gen.JavaLexer import JavaLexer
-from Code.MyListener import CustomListener
+from Code.MyListener import CustomListener2
 
 def main():
     while True:
@@ -20,7 +20,7 @@ def main():
 
     tree = parser.compilationUnit()
 
-    listener = CustomListener()
+    listener = CustomListener2()
     walker = ParseTreeWalker()
     walker.walk(listener, tree)
 
