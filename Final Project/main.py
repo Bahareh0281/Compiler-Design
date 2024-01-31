@@ -1,7 +1,8 @@
 from antlr4 import *
+from antlr4.ParserRuleContext import ParserRuleContext
 from gen.JavaParser import JavaParser
 from gen.JavaLexer import JavaLexer
-from Code.MyListener import EjioguMetricsListener
+from Code.MyListener import CustomListener
 
 def main():
     while True:
@@ -19,15 +20,17 @@ def main():
 
     tree = parser.compilationUnit()
 
-    listener = EjioguMetricsListener()
+    listener = CustomListener()
     walker = ParseTreeWalker()
     walker.walk(listener, tree)
 
-    structural_complexity = listener.calculate_structural_complexity()
-    software_size = listener.calculate_software_size()
+    # structural_complexity = listener.calculate_structural_complexity()
+    # software_size = listener.calculate_software_size()
+    # ifc = listener.calculate_ifc(len(java_code.splitlines()))
 
-    print("Structural Complexity: ", structural_complexity)
-    print("Software Size: ", software_size)
+    # print("Structural Complexity: ", structural_complexity)
+    # print("Software Size: ", software_size)
+    # print("Information Flow Complexity (IFC): ", ifc)
 
 if __name__ == '__main__':
     main()
