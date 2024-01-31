@@ -148,21 +148,6 @@ class CustomListener(ParseTreeListener):
 
     def exitCompilationUnit(self, ctx: JavaParser.CompilationUnitContext):
         self.endtime = time.time()
-        print("---------------------------------------------------------------------\nHenry and Kafura’s Information Software Metrics \n---------------------------------------------------------------------")
-        print(f"the number of procedures: {len(self.eachIFC)}")
-        print("the formula for IFC is: Length * (Fin * Fout)^2")
-        print("print the each procedure IFC:")
-        for key, value in self.eachIFC.items():
-            print(f'{key}: {value}')
-        print(f"the total IFC is: {self.IFC}")
-        print("************** Performance ****************")
-        print("related metrics:")
-        print(f"IFC: {self.IFC}")
-        print(f"time to response: {self.endtime - self.starttime} seconds")
-
-        print("---------------------------------------------------------------------")
-        print("---------------------------------------------------------------------\n\n")
-
         print("---------------------------------------------------------------------\nReliability Metrics\n---------------------------------------------------------------------")
         mtbf = self.mean_time_between_failures()
         availability = self.calculate_availability()
@@ -205,3 +190,69 @@ class CustomListener(ParseTreeListener):
                 failure_rate = calculated_failure_rate
 
         return failure_rate
+
+
+
+
+
+class CustomListener2(ParseTreeListener):
+    def __init__(self):
+        self.graph = nx.DiGraph()
+        self.Fan = 0
+        self.Fout = 0
+        self.IFC = 0
+        self.inMethod = False
+        self.variables = []
+        self.eachIFC = {}
+        self.starttime = 0
+        self.endtime = 0
+
+
+    def enterVariableDeclarator(self, ctx:JavaParser.VariableDeclaratorContext):
+        if self.inMethod == True :
+            self.variables.append( ctx.variableDeclaratorId().Identifier())
+            self.Fan = self.Fan + 1
+            self.Fout = self.Fout + 1
+
+    def enterFormalParameter(self, ctx:JavaParser.FormalParameterContext):
+        self.variables.append( ctx.variableDeclaratorId().Identifier())
+        self.Fan = self.Fan + 1
+
+    def enterMethodDeclaration(self, ctx:JavaParser.MethodDeclarationContext):
+        self.inMethod = True
+
+    def exitMethodDeclaration(self, ctx:JavaParser.MethodDeclarationContext):
+        self.inMethod = False
+        start_line = ctx.start.line
+        stop_line = ctx.stop.line
+        # Calculate the number of lines
+        lines_in_context = stop_line - start_line + 1
+        me_ifc = lines_in_context *  math.pow( (self.Fan * self.Fout) , 2 )
+        self.IFC = self.IFC + me_ifc
+        self.eachIFC[ctx.methodHeader().methodDeclarator().Identifier()] = me_ifc
+        self.Fan = 0
+        self.Fout = 0
+        self.variables = []
+
+        # Enter a parse tree produced by JavaParser#leftHandSide.
+    def enterLeftHandSide(self, ctx: JavaParser.LeftHandSideContext):
+        if ctx.expressionName().Identifier() not in self.variables :
+            self.Fout = self.Fout + 1
+
+    def exitCompilationUnit(self, ctx: JavaParser.CompilationUnitContext):
+        self.starttime = time.time()
+    def exitCompilationUnit(self, ctx: JavaParser.CompilationUnitContext):
+        self.endtime = time.time()
+        print("---------------------------------------------------------------------\nHenry and Kafura’s Information Software Metrics \n--------------------------------------------------------------------- ")
+        # print(self.operators)
+        print(f"the number of procedures : {len(self.eachIFC)}")
+        print(f"the formula for IFC is : Length * (Fin * Fout)^2")
+        print("print the each procedure IFC :")
+        for key, value in self.eachIFC.items():
+            print(f'{key}: {value}')
+        # print(self.operands)
+        print(f"the total IFC is : {self.IFC}")
+        print("************** Performance ****************")
+        print("related metrics :")
+        print(f"IFC : {self.IFC}")
+        print(f"time to response : {self.endtime - self.starttime} seconds")
